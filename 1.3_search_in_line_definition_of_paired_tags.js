@@ -1,5 +1,5 @@
-let answer = (firstDiv.split("<p>")).length;
-if (answer > 2) {
+let result = (firstDiv.split("<p>")).length;
+if (result > 2) {
 	console.log(true);
 }
 else {
