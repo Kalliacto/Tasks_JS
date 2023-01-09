@@ -1,2 +1,2 @@
-let result = (phone.replace(/\D/g, ''));
-console.log("+"+result);
+let res = (phone.replace(/\D/g, ''));
+console.log("+" + res);
