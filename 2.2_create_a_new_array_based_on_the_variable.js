@@ -9,5 +9,4 @@ function newArray(value) {
 	}
 	console.log(newArr);
 }
-
 newArray(partNumbers);
