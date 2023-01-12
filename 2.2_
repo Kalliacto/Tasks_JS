@@ -1,0 +1,13 @@
+let regexp= /\d\d\D\D$/;
+let newArr = [];
+
+function newArray(value) {
+  	for (let item of partNumbers) {
+    		if (regexp.test(item )) {
+			newArr.push(item);
+  		}
+	}
+	console.log(newArr);
+}
+
+newArray(partNumbers);
