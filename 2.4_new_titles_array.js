@@ -9,3 +9,6 @@ let tasks = [
  titles.push(tasks[i].title);
  }
  console.log(titles);
+//Или через map короче
+let titles = tasks.map(e => e.title);
+console.log(titles);
