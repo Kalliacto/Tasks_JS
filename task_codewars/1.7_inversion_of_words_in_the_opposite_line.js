@@ -16,3 +16,15 @@ function reverseWords(str) {
   return newStr.join(' ');
 }
 reverseWords(str);
+// ---------------------------------------
+let str = "elbuod  secaps";
+function reverseWords(str) {
+let result = [];
+  
+  str.split(" ").forEach((element) => {
+    result.push(element.split("").reverse().join(""));
+  })
+  
+  return result.join(" ");
+}
+reverseWords(str);
