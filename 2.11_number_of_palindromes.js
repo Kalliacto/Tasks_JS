@@ -5,7 +5,7 @@ function countingPalindrome(array) {
     
     words.forEach((element) => {
         element = element.toLowerCase();
-        let newElement = element.toLowerCase().split("").reverse().join('');
+        let newElement = element.split("").reverse().join('');
         if (element === newElement) {
              result[0] += 1;
         } else {
