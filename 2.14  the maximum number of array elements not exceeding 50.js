@@ -10,3 +10,20 @@ const checkElemet = numbers.reduce(function(prev,curv){
 checkElemet;
 
 console.log(result);
+
+
+// В разложенном виде reduce
+function checkSumElement(array) {
+    let count = 0;
+    let sumElement = 0;
+
+    
+    for(i = 0; i < array.length;i++) {
+        if (sumElement + array[i] <= 50) {
+            sumElement += array[i];
+            count++;
+        }
+    }
+    return count;
+}
+checkSumElement(numbers);
