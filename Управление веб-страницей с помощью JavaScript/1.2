@@ -1,0 +1,21 @@
+Напишите скрипт, который определяет тип тега с идентификатором elem и выводит его в консоль.
+<html>
+<head>
+</head>
+<body>
+ <div class='card'>
+  <h1>Всем привет!</h1>
+   <p>
+    <b id="elem">Удачи в решении задачи!</b>
+   </p>
+ </div>
+</body>
+
+</html>
+
+
+let elem = document.getElementById("elem").tagName;
+or 
+let elem = document.getElementById("elem").nodeName;
+
+console.log(elem.toLowerCase());
