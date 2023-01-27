@@ -1,3 +1,6 @@
+let array_1 = [2, 4, 7, 8, 1];
+let array_2 = [2, 5, 11, 6, 1];
+
 function intersection (array1, array2) {
     let result = [];
 
@@ -15,6 +18,8 @@ function intersection (array1, array2) {
 intersection(array_1, array_2);
 
 //----------------------------------  
+let array_1 = [2, 4, 7, 8, 1];
+let array_2 = [2, 5, 11, 6, 1];
 
 function intersection(array1, array2) {
     let result = [];
@@ -25,4 +30,22 @@ function intersection(array1, array2) {
     }
     return result;
 }
+intersection(array_1, array_2);
+
+//----------------------------------  
+let array_1 = [2, 4, 7, 8, 1];
+let array_2 = [2, 5, 11, 6, 1];
+
+function intersection (array1, array2) {
+    let result = [];
+
+    array1.forEach(function (element) {
+        if (array2.includes(element) == true) {
+            result.push(element);
+}
+    });
+   
+    return result;
+};
+
 intersection(array_1, array_2);
