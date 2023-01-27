@@ -1,0 +1,38 @@
+В HTML-документе есть несколько тегов с классом promo. Напишите скрипт, который определяет количество элементов с данным классом и выводит результат в консоль.
+<html>
+<head>
+</head>
+<body>
+ <div class='card promo'>
+  <h1 class='promo'>Всем привет!</h1>
+   <p>
+    <span class='secret promo'>Удачи в решении задачи!</span>
+   </p>
+ </div>
+</body>
+</html>
+
+body {
+	background-color: #6f9e80;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.card{
+	padding: 10px;
+	margin: 10px;
+	display: inline-block;
+	background-color: #95a5a6;
+}
+
+.secret{
+	color: #34495e;
+}
+
+//-----------------------
+let promo = document.querySelectorAll(".promo");
+let countPromo = 0;
+for (let i = 0; i < promo.length; i++) {
+  countPromo++;
+}
+console.log(countPromo);
