@@ -1,0 +1,41 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class='card'>
+  <h1>Всем привет!</h1>
+   <p>
+    <span class='secret'>Удачи в решении задачи!</span>
+   </p>
+ </div>
+<script src="script.js"></script>
+</body>
+
+</html>
+
+body {
+	background-color: #6f9e80;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.card{
+	padding: 10px;
+	margin: 10px;
+	display: inline-block;
+	background-color: #95a5a6;
+}
+
+.secret{
+	color: #34495e;
+}
+
+
+
+
+let secret = document.getElementsByClassName("secret");
+
+for (let i = 0; i < secret.length; i++) {
+  console.log(secret[i].nodeName.toLowerCase());
+}
