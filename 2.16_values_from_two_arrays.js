@@ -49,3 +49,14 @@ function intersection (array1, array2) {
 };
 
 intersection(array_1, array_2);
+// ------------------------------------------------
+
+function intersection (arr_1, arr_2) {
+  let result = arr_1.reduce(function(total, value, index) {
+    if (arr_2[index] == value) total.push(value);
+    return total;
+}, []);
+  return result.sort((a, b) => b - a);
+}
+
+intersection(array_1, array_2);
