@@ -36,3 +36,15 @@ function foo(arr) {
 }
 
  console.log(foo(employee));
+
+//-----------------------Верное решение---------------------------
+employee  = [
+    ["firstName", "Ivan"], 
+    ["lastName", "Ivanov"],
+    ["hireDate", "21.10.2015"]
+]
+
+let newEmployee = employee.filter(el => el[0] !=="hireDate");
+newEmployee.push(["jobName", "IT PROG"]);
+console.log(newEmployee);
+
