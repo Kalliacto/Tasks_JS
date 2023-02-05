@@ -17,3 +17,13 @@ function sumMix(x){
   return result;
 }
 sumMix(x);
+
+
+//---------------------------------------------------
+function sumMix(x){
+let result = x.map(a => Number(a)).reduce((a, b) => a + b);
+
+  return result;
+}
+
+sumMix([9, 3, '7', '3']);
