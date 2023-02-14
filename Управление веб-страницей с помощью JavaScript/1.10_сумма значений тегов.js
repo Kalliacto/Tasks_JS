@@ -25,3 +25,9 @@ let elems = document.getElementsByClassName("numeric");
 let elemsArr = Array.prototype.slice.call(elems); //Преобразовываем в массив с помощью Array.prototype.slice.call(Т.к HTML-collection не является array)
 elemsArr.forEach(elem => result += +elem.innerText);
 console.log(result);
+
+//--------------------------------
+let result = 0;
+let elems = document.getElementsByClassName("numeric");
+Array.prototype.slice.call(elems).forEach(elem => result += +elem.innerText);
+console.log(result);
