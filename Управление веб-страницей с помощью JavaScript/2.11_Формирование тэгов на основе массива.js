@@ -11,11 +11,11 @@ tasks = ["Проверить документы", "Отправить начал
 
 //---------------------------------
 const tasks = ["Проверить документы", "Отправить начальству", "Организовать собрание"];
-++
+
 const tags = tasks.map(elem => {
 	const paragraph = document.createElement('p');
-	elem.innerText = paragraph;
-  	return elem;
+	paragraph.innerText = elem;
+  	return paragraph;
 });
 
 const root = document.getElementById('root');
