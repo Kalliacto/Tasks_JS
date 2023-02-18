@@ -63,3 +63,25 @@ function getvalue() {
 props.getvalue=getvalue;
 props.getvalue();
 
+//-------------------------------4 вариант-----------------------------
+const props = {
+  name: 'Анатолий',
+  age: 29,
+  sayHi: () => 'привет',
+};
+
+function getValue() {
+    const arr = [];
+
+    for (let key in this) {
+       if (typeof this[key] !== 'function') {
+           arr.push(`${key}: ${this[key]}`);
+          }
+      }
+    console.log(`Значения свойств объекта props (${arr.join(', ')})`);
+    }
+
+getValue = getValue.bind(props);
+getValue();  // Значения свойств объекта props (name: Анатолий, age: 29)
+
+
