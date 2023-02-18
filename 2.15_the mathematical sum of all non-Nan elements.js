@@ -28,3 +28,16 @@ const calcSumElements = values.reduce(function(previousValue, currentItem) {
             }   
 }, 0);
 calcSumElements;
+
+// -------------------------------------------------------------
+let values = ["100", "30", "Не число", "20", "Тоже не число"];
+
+
+const calcSumElements = values.reduce(function(previousValue, currentItem) {
+            if (parseInt(currentItem)) {
+        	return previousValue + parseInt(currentItem);
+            } else {
+                return previousValue;
+            }   
+}, 0);
+calcSumElements;
