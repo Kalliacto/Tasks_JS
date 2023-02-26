@@ -25,3 +25,21 @@ let user = {
     return this.array = value;
     } 
 }
+
+
+//----------------------------------------------
+let user = {
+    firstName,
+    lastName,
+
+get fullName() {
+    return this.firstName + ' ' + this.lastName;
+},
+    
+set fullName(value) {
+    // value = 'Иван Иванов';
+    const arr = value.split(' '); // [Иван, Иванов]
+    this.firstName = arr[0];
+    this.lastName = arr[1];
+    } 
+}
