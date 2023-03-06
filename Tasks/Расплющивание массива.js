@@ -17,3 +17,8 @@ function flat(arr) {
 
 	return res;
 }
+
+
+//------------------------------------------------
+const arr = [[3,4, [2,3]], [], [5, [1,2]]];
+const res = arr.flat(Infinity);
