@@ -12,3 +12,13 @@ function newArray(array) {
     console.log(newValues);
 }
 newArray(values);
+
+---------------------------------
+const newArray = (array) => {
+let s = values.indexOf(true);
+let end = values.lastIndexOf(false);
+let result = values.slice(s, end + 1);
+    
+return console.log(result);
+}
+newArray(values);
