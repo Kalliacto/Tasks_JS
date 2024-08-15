@@ -33,3 +33,26 @@ function incrementString (strng) {
         return letters + 1
     }
 }
+//-----------------------------------------------------
+function incrementString (strng) {
+    let numStr = strng.match(/(0{0,})(\d{0,})$/);
+
+    if (numStr) {
+        let [,zeros, number] = numStr;
+        let result = Number(number) + 1;
+
+        if (number.length === String(result).length) {
+        return strng.slice(0, numStr.index) + zeros + result;
+    }
+        else {
+        return strng.slice(0, numStr.index) + zeros.slice(0, -1) + result;
+        }
+    }
+    else {
+    return strng + '1';
+    }
+}
+//------------------------------------------------------
+let incrementString = (str) => {
+   return str.replace(/([0-8]|\d?9+)?$/, (e) =>  e ? + e + 1 : 1)
+}
