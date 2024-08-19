@@ -40,3 +40,15 @@ const comp = (array1, array2) => {
 
     return true
 }
+
+//------------------------------------------------------------------------------------------
+function comp(array1, array2){
+    if(!array1 || !array2 || array1.length !== array2.length) return false;
+    const arr1 = array1.sort((a,b) => a - b);
+    const arr2 = array2.map(el => Math.sqrt(el)).sort((a,b) => a - b);
+
+    for (let i = 0; i < arr1.length; i++) {
+        if(arr1[i] !== arr2[i]) return false;
+    }
+    return true;
+}
